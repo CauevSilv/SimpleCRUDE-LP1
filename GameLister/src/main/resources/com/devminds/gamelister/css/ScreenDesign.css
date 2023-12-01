@@ -1,0 +1,36 @@
+.button {
+    -fx-background-color: #424874;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: #C2BAE6;
+}
+
+.button:pressed {
+    -fx-background-color: #C2BAE6;
+}
+.anchor-pane {
+    -fx-background-color: #C0C0C0;
+}
+.table-view .filler{
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .window-icon {
+    -fx-graphic: url("icons/iconDevMinds.png");
+}
+.janela-com-icone .window-icon {
+    -fx-graphic: url("icons/iconDevMinds.png");
+}
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
