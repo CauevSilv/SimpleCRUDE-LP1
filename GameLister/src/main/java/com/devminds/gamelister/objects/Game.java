@@ -5,18 +5,17 @@ public class Game {
     private String genero;
     private String critica;
     private String ano;
-    private String  pirata;
+    private Integer pirata;
     private String  tamanho;
     private Boolean isPirata;
+    private int idgame;
 
-    public Game(String nome, String genero, String critica, String ano, String pirata, String tamanho, Boolean isPirata) {
-        this.nome = nome;
-        this.genero = genero;
-        this.critica = critica;
-        this.ano = ano;
-        this.pirata = pirata;
-        this.tamanho = tamanho;
-        this.isPirata = isPirata;
+    public int getIdgame() {
+        return idgame;
+    }
+
+    public void setIdgame(int idgame) {
+        this.idgame = idgame;
     }
 
     public String getNome() {
@@ -51,15 +50,11 @@ public class Game {
         this.ano = ano;
     }
 
-    public String getPirata() {
+    public Integer getPirata() {
         return pirata;
     }
 
-    public void setPirata(Boolean pirata) {
-        isPirata = pirata;
-    }
-
-    public void setPirata(String pirata) {
+    public void setPirata(Integer pirata) {
         this.pirata = pirata;
     }
 
