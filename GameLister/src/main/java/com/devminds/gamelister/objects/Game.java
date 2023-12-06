@@ -5,7 +5,7 @@ public class Game {
     private String genero;
     private String critica;
     private String ano;
-    private Integer pirata;
+    private String pirata;
     private String  tamanho;
     private Boolean isPirata;
     private int idgame;
@@ -50,12 +50,12 @@ public class Game {
         this.ano = ano;
     }
 
-    public Integer getPirata() {
+    public String getPirata() {
         return pirata;
     }
 
     public void setPirata(Integer pirata) {
-        this.pirata = pirata;
+        this.pirata = String.valueOf(pirata);
     }
 
     public String getTamanho() {

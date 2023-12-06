@@ -9,16 +9,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@css/ScreenDesign.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devminds.gamelister.ControllerTelaRegistrar">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="900.0" stylesheets="@css/ScreenDesign.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devminds.gamelister.ControllerTelaRegistrar">
    <children>
-      <Label layoutX="54.0" layoutY="36.0" text="Registro de jogos">
+      <Label layoutX="45.0" layoutY="31.0" text="Registro de jogos">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
       <Button fx:id="btn_voltar" layoutX="769.0" layoutY="41.0" mnemonicParsing="false" onAction="#stageVoltar" prefHeight="36.0" prefWidth="97.0" text="Voltar" />
-      <Button fx:id="btn_salvar" layoutX="769.0" layoutY="536.0" mnemonicParsing="false" onAction="#salvarNoBD" prefHeight="36.0" prefWidth="97.0" text="Salvar" />
-      <HBox layoutX="14.0" layoutY="108.0" prefHeight="100.0" prefWidth="798.0">
+      <Button fx:id="btn_salvar" layoutX="769.0" layoutY="172.0" mnemonicParsing="false" onAction="#salvarNoBD" prefHeight="36.0" prefWidth="97.0" text="Salvar" />
+      <HBox alignment="TOP_CENTER" layoutX="14.0" layoutY="108.0" prefHeight="52.0" prefWidth="854.0" spacing="10.0">
          <children>
             <VBox prefHeight="100.0" prefWidth="199.0">
                <children>
@@ -48,7 +48,7 @@
                   <TextField fx:id="ano" />
                </children>
             </VBox>
-            <VBox prefHeight="100.0" prefWidth="108.0">
+            <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="108.0">
                <children>
                   <Label prefHeight="17.0" prefWidth="63.0" text="Tamanho" />
                   <TextField fx:id="tamanho" />

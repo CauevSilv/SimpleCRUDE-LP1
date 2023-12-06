@@ -18,6 +18,7 @@ public class RSConverter {
                 obj.setAno(resultSet.getString("ano"));
                 obj.setPirata(resultSet.getInt("pirata"));
                 obj.setIdgame(resultSet.getInt("id_game"));
+                obj.setTamanho(resultSet.getString("tamanho"));
 
                 obsList.add(obj);
             }

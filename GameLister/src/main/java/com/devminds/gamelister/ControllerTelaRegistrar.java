@@ -5,10 +5,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
+
+import java.lang.reflect.InvocationTargetException;
 
 
 public class ControllerTelaRegistrar {
@@ -23,8 +23,16 @@ public class ControllerTelaRegistrar {
     @FXML private Button btn_salvar;
 
     @FXML private void salvarNoBD (ActionEvent event){
-        DAOGame dao = new DAOGame();
-        dao.registerGame(nome.getText(),genero.getText(),critica.getText(),ano.getText(),tamanho.getText(),ispirata.getSelectionModel().getSelectedItem());
+        try{
+            DAOGame dao = new DAOGame();
+            dao.registerGame(nome.getText(),genero.getText(),critica.getText(),ano.getText(),tamanho.getText(),ispirata.getSelectionModel().getSelectedItem());
+        } catch (NullPointerException e) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Erro!");
+            alert.setHeaderText("Todos os campos são de preenchimento OBRIGATÓRIO.");
+            alert.showAndWait();
+        }
+
     }
 
 
